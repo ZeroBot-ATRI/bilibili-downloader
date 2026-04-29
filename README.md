@@ -5,7 +5,7 @@
 ## 功能
 
 1. 支持从整段分享文本中自动提取 B 站视频链接。
-2. **支持直接输入 BV 号**（如 `BV1VEdjB6EEx`），无需完整链接。
+2. **支持直接输入 BV 号**，无需完整链接。
 3. 使用 `yt-dlp + ffmpeg` 下载视频，自动合并为 `mp4` 格式。
 4. 支持 `cookies.txt` 路径输入或页面直接上传 `cookies.txt`。
 5. **自动记忆上次使用的 cookie 路径**，下次打开自动填充。
@@ -61,9 +61,9 @@ Content-Type: application/json
 ```
 
 `text` 字段支持以下格式：
-- 纯 BV 号：`BV1VEdjB6EEx`
-- 完整链接：`https://www.bilibili.com/video/BV1VEdjB6EEx`
-- 分享文本：`【标题】 https://www.bilibili.com/video/BV1VEdjB6EEx`
+- 纯 BV 号：`BV114514`
+- 完整链接：`https://www.bilibili.com/video/BV114514`
+- 分享文本：`【标题】 https://www.bilibili.com/video/BV114514`
 
 ### 上传 cookies.txt 后下载
 
@@ -137,6 +137,7 @@ GET /api/cookie-state
 - Cookie 有有效期，过期后需要重新导出。
 - 不要把 cookie 文件分享给他人，它等同于你的登录凭证。
 - 下载器会记住上次使用的 cookie 路径，下次无需重复填写。
+- 启动后不要把控制台关了。
 
 ## 说明
 
